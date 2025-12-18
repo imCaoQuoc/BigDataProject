@@ -1,0 +1,24 @@
+# Video Segmentation System - Requirements
+# ==========================================
+
+# IMPORTANT: Install PyTorch with CUDA first (for GPU acceleration):
+# pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+
+# Core dependencies
+ultralytics>=8.3.0          # YOLO segmentation
+opencv-python>=4.12.0       # Video processing
+streamlit>=1.52.0           # Web UI
+kafka-python>=2.3.0         # Kafka streaming
+numpy>=2.2.0                # Array operations
+
+# Additional model architectures
+segmentation-models-pytorch>=0.3.0  # UNet, DeepLabV3+ models
+transformers>=4.36.0                # SegFormer (HuggingFace)
+
+# Installation steps:
+# 1. Create virtual environment: python -m venv .venv
+# 2. Activate: .venv\Scripts\activate (Windows) or source .venv/bin/activate (Linux/Mac)
+# 3. Install PyTorch with CUDA: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# 4. Install other requirements: pip install -r requirements.txt
+# 5. Start Kafka: docker-compose up -d
+# 6. Run app: streamlit run app.py
