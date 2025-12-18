@@ -1,0 +1,10 @@
+video/
+model/
+spark/
+logs/
+.git/
+.venv/
+__pycache__/
+*.mp4
+*.pt
+*.pth
